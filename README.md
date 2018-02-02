@@ -26,5 +26,7 @@ cd /var/www/html/admin/style/vendor/
 sudo git reset --hard
 ```
 
+---
+
 ### License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
