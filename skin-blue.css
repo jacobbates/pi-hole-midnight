@@ -12,7 +12,7 @@ border:1px solid #666;
 color:#b2b2b2;
 }
 
-input,.form-control,pre,.box-footer,datatables_processing {
+input,.form-control,pre,.box-footer,.datatables_processing {
 background:#080909;
 border:1px solid #666;
 color:#b2b2b2;
