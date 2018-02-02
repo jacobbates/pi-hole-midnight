@@ -1,8 +1,11 @@
 # pi-hole-midnight
-Custom dark theme CSS for pi-hole to replace skin-blue AdminLTE theme
-Created for use with [pi-hole](https://github.com/pi-hole/pi-hole)
+Custom dark theme CSS for pi-hole to replace skin-blue AdminLTE theme.
+
+Created for use with [pi-hole](https://github.com/pi-hole/pi-hole).
 
 [![Screenshot](https://i.imgur.com/RxdmXrK.png)](https://i.imgur.com/RxdmXrK.png)
+
+---
 
 ## Install
 Type the following commands into SSH, line by line.
