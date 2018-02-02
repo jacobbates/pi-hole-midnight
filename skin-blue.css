@@ -52,9 +52,7 @@ background-color:#3c8dbc;
 background-color:#000;
 }
 
-.user-panel>.pull-left>img,.user-image,.navbar-nav>.user-menu>.dropdown-menu>li.user-header>img {
--webkit-filter:invert(85%);
-}
+
 
 .bg-aqua {
 background:#004c5f!important;
