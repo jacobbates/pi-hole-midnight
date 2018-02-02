@@ -17,6 +17,7 @@ sudo rm -f skin-blue.min.css
 sudo cp pi-hole-midnight/skin-blue.min.css .
 sudo rm -rf pi-hole-midnight
 ```
+Don't forget the trailing " ." on the cp line (it means copy to current directory).
 
 ## Uninstall/Revert
 Type the following commands into SSH, line by line.
