@@ -52,8 +52,6 @@ background-color:#3c8dbc;
 background-color:#000;
 }
 
-
-
 .bg-aqua {
 background:#004c5f!important;
 }
@@ -251,4 +249,9 @@ border-color:#12171a;
 
 .table-striped>tbody>tr:nth-of-type(odd) {
 background-color:#101417;
+}
+
+.layout-boxed {
+background-color:#000 !important;
+background-image:none !important;
 }
