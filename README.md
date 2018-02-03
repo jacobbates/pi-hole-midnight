@@ -1,9 +1,9 @@
-# pi-hole-midnight :alternative branch
+# pi-hole-midnight
 Custom dark theme CSS for pi-hole to replace skin-blue AdminLTE theme.
 
 Created for use with [pi-hole](https://github.com/pi-hole/pi-hole).
 
-[![Screenshot](https://i.imgur.com/mIKHdxO.png)](https://i.imgur.com/mIKHdxO.png)
+[![Screenshot](https://i.imgur.com/UrmgpyN.png)](https://i.imgur.com/UrmgpyN.png)
 
 ---
 
