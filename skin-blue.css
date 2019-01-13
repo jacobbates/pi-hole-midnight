@@ -245,7 +245,7 @@ background-color:#0a0d0f !important;
 background-image:none !important;
 }
 
-.chart svg, .chart canvas {
+.chart svg, .chart canvas, .chartjs-render-monitor, .chart-legend{
 -webkit-filter: invert(100%);
 filter: invert(100%); 
 }
@@ -256,8 +256,4 @@ color: rgba(255,255,255,0.15);
 
 #all-queries tr td:nth-child(6){
   color: #808b90 !important;
-}
-
-.chartjs-render-monitor, .chart-legend{
-filter: invert(100%);
 }
