@@ -245,7 +245,7 @@ background-color:#0a0d0f !important;
 background-image:none !important;
 }
 
-.chart svg, .chart canvas {
+.chart svg, .chart canvas, .chartjs-render-monitor, .chart-legend {
 -webkit-filter: invert(100%);
 filter: invert(100%); 
 }
