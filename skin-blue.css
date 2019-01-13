@@ -257,3 +257,11 @@ color: rgba(255,255,255,0.15);
 #all-queries tr td:nth-child(6){
   color: #808b90 !important;
 }
+
+.chartjs-render-monitor{
+filter: invert(100%);
+}
+
+.chartjs-legend{
+filter: invert(100%);
+}
