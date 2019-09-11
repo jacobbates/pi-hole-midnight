@@ -131,7 +131,8 @@
     height: auto;
     margin: 0;
     cursor: default; 
-    color: #000}
+    color: #f5f5f5;
+    background-color:#424242}
   .daterangepicker select.monthselect {
     margin-right: 2%;
     width: 56%; }
@@ -139,7 +140,9 @@
     width: 40%; }
   .daterangepicker select.hourselect, .daterangepicker select.minuteselect, .daterangepicker select.secondselect, .daterangepicker select.ampmselect {
     width: 50px;
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+    color: #f5f5f5;
+    background-color:#424242}
   .daterangepicker .input-mini {
     border: 1px solid #ccc;
     border-radius: 4px;
