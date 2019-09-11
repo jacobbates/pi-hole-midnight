@@ -263,7 +263,9 @@ html {
     background-color: #0a0d0f!important;
     background-image: none!important
 }
-
+#all-queries tr td{
+    color: #f5f5f5
+}
 #all-queries tr td:nth-child(6) {
-    color: #808b90!important
+    color: #f5f5f5 !important
 }
