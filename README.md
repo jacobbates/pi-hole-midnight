@@ -12,12 +12,12 @@ Type the following commands into SSH, line by line.
 
 ```
 cd /var/www/html/admin/style/vendor/
-sudo git clone https://github.com/MBarrows20/pi-hole-midnight.git
+sudo git clone https://github.com/MBarrows20/pi-hole-material-dark.git
 sudo rm -f skin-blue.min.css
 sudo rm -f daterangepicker.css
-sudo cp pi-hole-midnight/skin-blue.min.css .
-sudo cp pi-hole-midnight/daterangepicker.css .
-sudo rm -rf pi-hole-midnight
+sudo cp pi-hole-material-dark/skin-blue.min.css .
+sudo cp pi-hole-material-dark/daterangepicker.css .
+sudo rm -rf pi-hole-material-dark
 ```
 Don't forget the trailing " ." on the cp lines (it means copy to current directory).
 
