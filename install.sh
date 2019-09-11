@@ -6,6 +6,7 @@ while true; do
             cp -f admin/style/vendor/skin-blue.min.css admin/style/vendor/skin-blue.min.bkp.css  # Backup Skin StyleSheet...
             cp -f admin/style/vendor/daterangepicker.css admin/style/vendor/daterangepicker.bkp.css  # Backup Calendar StyleSheet...
             cp -f admin/scripts/vendor/app.min.js admin/scripts/vendor/app.min.bkp.js # Backup app.js
+            cp -f admin/scripts/pi-hole/js/index.js admin/scripts/pi-hole/js/index.bkp.js # Backup index.js
             echo "Backup completed!"
 			break ;;
         [Nn]* ) break;;
@@ -23,8 +24,11 @@ while true; do
             rm -f admin/style/vendor/skin-blue.min.css
             rm -f admin/style/vendor/daterangepicker.css
             rm -f admin/scripts/vendor/app.min.js
-            cp temp/skin-blue.min.css admin/style/vendor/skin-blue.min.css
-            cp temp/daterangepicker.css admin/style/vendor/daterangepicker.css
+            rm -f admin/scripts/pi-hole/js/index.js
+            cp temp/style/vendor/skin-blue.min.css admin/style/vendor/skin-blue.min.css
+            cp temp/style/vendor/daterangepicker.css admin/style/vendor/daterangepicker.css
+            cp temp/scripts/vendor/app.min.js admin/scripts/vendor/app.min.js
+            cp temp/scripts/pi-hole/js/index.js admin/scripts/pi-hole/js/index.js
 	    rm -rf temp/
 			break;;
         [Nn]* ) break;;

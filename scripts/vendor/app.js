@@ -222,8 +222,8 @@ $.AdminLTE.options = {
         contactToggleSelector: '[data-widget="chat-pane-toggle"]'
     },
     colors: {
-        electricBlue: "#2ea5bb",
         hotPink: "#cb1c64",
+        electricBlue: "#2ea5bb",        
         energyGreen: "#01ffc3",
         darkBlue: "#23568f",
         lavender: "#9d72ff",
