@@ -721,9 +721,9 @@ $(document).ready(function() {
                 {
                     label: "Total DNS Queries",
                     fill: false,
-                    backgroundColor: "rgba(220,220,220,0.5)",
-                    borderColor: "rgba(0, 166, 90,.8)",
-                    pointBorderColor: "rgba(0, 166, 90,.8)",
+                    backgroundColor: "rgba(220,220,220,0)",
+                    borderColor: "rgba(0, 166, 90,1)",
+                    pointBorderColor: "rgba(0, 166, 90,1)",
                     pointRadius: 1,
                     pointHoverRadius: 5,
                     data: [],
@@ -733,7 +733,7 @@ $(document).ready(function() {
                 {
                     label: "Blocked DNS Queries",
                     fill: false,
-                    backgroundColor: "rgba(0,192,239,0.5)",
+                    backgroundColor: "rgba(0,192,239,0)",
                     borderColor: "rgba(0,192,239,1)",
                     pointBorderColor: "rgba(0,192,239,1)",
                     pointRadius: 1,
