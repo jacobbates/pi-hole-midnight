@@ -18,8 +18,8 @@ while true; do
 	    git clone https://github.com/mbarrows20/pi-hole-material-dark.git temp
             rm -f admin/style/vendor/skin-blue.min.css
             rm -f admin/style/vendor/daterangepicker.css
-            cp temp/admin/style/vendor/skin-blue.min.css admin/style/vendor/skin-blue.min.css
-            cp temp/admin/style/vendor/daterangepicker.css admin/style/vendor/daterangepicker.css
+            cp temp/skin-blue.min.css admin/style/vendor/skin-blue.min.css
+            cp temp/daterangepicker.css admin/style/vendor/daterangepicker.css
 	    rm -rf temp/
 			break;;
         [Nn]* ) break;;
