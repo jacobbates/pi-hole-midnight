@@ -4,7 +4,6 @@
 body {
     background: #000
 }
-
 .btn-default,button {
     background-color: #080909;
     border: 1px solid #666;
@@ -44,25 +43,25 @@ html {
     background-color: #000
 }
 
-.small-box.bg-aqua, .small-box.bg-green, .small-box.bg-red, .small-box.bg-yellow {
-    background: #212121 !important ;
-    border-top: 3px solid #303030;
+.small-box.bg-aqua,.small-box.bg-green,.small-box.bg-red,.small-box.bg-yellow {
+    background: #212121!important;
+    border-top: 3px solid #303030
 }
 
 .small-box.bg-red .icon {
-    color: rgb(221, 75, 57, .8)
+    color: rgb(221,75,57,.8)
 }
 
 .small-box.bg-green .icon {
-    color: rgb(0, 166, 90, .8)
+    color: rgb(0,166,90,.8)
 }
 
 .small-box.bg-yellow .icon {
-    color: rgb(243, 156, 18, .8)
+    color: rgb(243,156,18,.8)
 }
 
 .small-box.bg-aqua .icon {
-    color: rgb(0, 192, 239, .8)
+    color: rgb(0,192,239,.8)
 }
 
 .alert-danger,.alert-error,.alert-info,.alert-success,.alert-warning,.bg-aqua,.bg-aqua-active,.bg-black,.bg-black-active,.bg-blue,.bg-blue-active,.bg-fuchsia,.bg-fuchsia-active,.bg-green,.bg-green-active,.bg-light-blue,.bg-light-blue-active,.bg-lime,.bg-lime-active,.bg-maroon,.bg-maroon-active,.bg-navy,.bg-navy-active,.bg-olive,.bg-olive-active,.bg-orange,.bg-orange-active,.bg-purple,.bg-purple-active,.bg-red,.bg-red-active,.bg-teal,.bg-teal-active,.bg-yellow,.bg-yellow-active,.callout.callout-danger,.callout.callout-info,.callout.callout-success,.callout.callout-warning,.label-danger,.label-info,.label-primary,.label-success,.label-warning,.modal-danger .modal-body,.modal-danger .modal-footer,.modal-danger .modal-header,.modal-info .modal-body,.modal-info .modal-footer,.modal-info .modal-header,.modal-primary .modal-body,.modal-primary .modal-footer,.modal-primary .modal-header,.modal-success .modal-body,.modal-success .modal-footer,.modal-success .modal-header,.modal-warning .modal-body,.modal-warning .modal-footer,.modal-warning .modal-header {
@@ -82,7 +81,7 @@ html {
 
 .content-wrapper,.right-side {
     background: #000;
-    color: #f3f3f3
+    color: #212121
 }
 
 .input-group .input-group-addon,.list-group-item,.panel,.panel-default>.panel-heading {
@@ -229,13 +228,25 @@ html {
 .nav-tabs-custom>.nav-tabs>li>a,.skin-blue .user-panel>.info,.skin-blue .user-panel>.info>a {
     color: #f5f5f5
 }
-
+#network-entries_length, #network-entries_filter, #domain-frequency td, #ad-frequency td, #client-frequency td, #client-frequency-blocked td{
+    color: #f5f5f5
+}
+#client-frequency-blocked a,#domain-frequency a, #client-frequency a, #ad-frequency a{
+    color: #42a5f5
+}
+#forward-destinations-legend.chart-legend,#query-types-legend.chart-legend{
+    color:#f5f5f5
+}
 .skin-blue .left-side,.skin-blue .main-sidebar,.skin-blue .wrapper {
     background-color: #303030
 }
 
-.table-bordered,.table-bordered>tbody>tr>td,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>thead>tr>th,.table-responsive {
-    border-color: #303030
+.table-bordered,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td,.table-bordered>thead>tr>td,.table-responsive {
+    border-color: #303030;
+    color: #212121
+}
+.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th, .table-bordered>thead>tr>th{
+    color: #e0e0e0;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
@@ -247,8 +258,6 @@ html {
     background-image: none!important
 }
 
-
 #all-queries tr td:nth-child(6) {
-    color: #808b90 !important;
+    color: #808b90!important
 }
-
