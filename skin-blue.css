@@ -1,6 +1,6 @@
 /* pi-hole-midnight */
 /* Custom dark theme CSS for pi-hole to replace skin-blue AdminLTE theme */
-/* https://github.com/MBarrows20/pi-hole-midnight/ */
+/* https://github.com/MBarrows20/pi-hole-material-dark/ */
 body {
     background: #000
 }
@@ -84,8 +84,13 @@ html {
     background: #000;
     color: #f5f5f5;
 }
+
 .content-wrapper table>tbody>tr>td{
     color: #414141;
+}
+#sysadmin td, #dns td, #DHCPLeasesTable_wrapper td, #DHCPStaticLeasesTable_wrapper td{
+    color: #f5f5f5;
+    border-color:#414141
 }
 .input-group .input-group-addon,.list-group-item,.panel,.panel-default>.panel-heading {
     background: #303030;
