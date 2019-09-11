@@ -82,7 +82,7 @@ html {
 
 .content-wrapper,.right-side {
     background: #000;
-    color: #212121
+    color: #f5f5f5
 }
 
 .input-group .input-group-addon,.list-group-item,.panel,.panel-default>.panel-heading {
@@ -104,17 +104,17 @@ html {
 }
 
 .nav-tabs-custom>.nav-tabs>li.active>a {
-    border-color: #30383b;
+    border-color: #30383b
 }
 
 .nav-tabs-custom>.nav-tabs>li.active:hover>a,.nav-tabs-custom>.nav-tabs>li.active>a {
-    background-color: #414141;
-    color: #b2b2b2;
+    background-color: #0a0d0f;
+    color: #b2b2b2
 }
 
 .navbar-custom-menu>.navbar-nav>li>.dropdown-menu,.navbar-nav>.user-menu>.dropdown-menu>.user-body a,.navbar-nav>.user-menu>.dropdown-menu>.user-footer {
-    background: #0c0d0e !important;
-    color: #b2b2b2 !important
+    background: #0c0d0e!important;
+    color: #b2b2b2!important
 }
 
 .pagination>.disabled>a,.pagination>.disabled>a:focus,.pagination>.disabled>a:hover,.pagination>.disabled>span,.pagination>.disabled>span:focus,.pagination>.disabled>span:hover,.pagination>li>a,.pagination>li>span {
@@ -128,7 +128,7 @@ html {
 }
 
 .skin-blue .list-group-item:hover {
-    background: #292e30 !important
+    background: #292e30!important
 }
 
 .skin-blue .main-header .navbar {
@@ -226,16 +226,20 @@ html {
     border-left: 3px solid transparent
 }
 
-#ad-frequency td,#client-frequency td,#client-frequency-blocked td,#domain-frequency td,#network-entries_filter,#network-entries_length,#DHCPLeasesTable_wrapper td, #DHCPStaticLeasesTable td, .nav-tabs-custom>.nav-tabs>li>a,.skin-blue .user-panel>.info,.skin-blue .user-panel>.info>a, #forward-destinations-legend.chart-legend,#query-types-legend.chart-legend{
+.nav-tabs-custom>.nav-tabs>li>a,.skin-blue .user-panel>.info,.skin-blue .user-panel>.info>a {
     color: #f5f5f5
 }
 
-[id^='adlist-text-']{
-    color: #e0e0e0
+#ad-frequency td,#client-frequency td,#client-frequency-blocked td,#domain-frequency td,#network-entries_filter,#network-entries_length {
+    color: #f5f5f5
 }
 
 #ad-frequency a,#client-frequency a,#client-frequency-blocked a,#domain-frequency a {
     color: #42a5f5
+}
+
+#forward-destinations-legend.chart-legend,#query-types-legend.chart-legend {
+    color: #f5f5f5
 }
 
 .skin-blue .left-side,.skin-blue .main-sidebar,.skin-blue .wrapper {
@@ -244,6 +248,7 @@ html {
 
 .table-bordered,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td,.table-bordered>thead>tr>td,.table-responsive {
     border-color: #303030;
+    color: #212121
 }
 
 .table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>th {
@@ -251,7 +256,7 @@ html {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #414141
+    background-color: #101417
 }
 
 .layout-boxed {
