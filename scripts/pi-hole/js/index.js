@@ -834,6 +834,13 @@ $(document).ready(function () {
                         },
                         label: function (tooltipItems, data) {
                             return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel;
+                        },
+                        labelColor: function(tooltipItem, chart){
+                            var color = data.datasets[tolltipItems.datasetIndex].borderColor[tooltipItems.datasetIndex];
+                            return {
+                                borderColor: 'rgb(0,0,0)',
+                                backgroundColor: color
+                            }
                         }
                     }
                 },
