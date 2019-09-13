@@ -7,7 +7,7 @@ while true; do
             cp -f admin/style/vendor/daterangepicker.css admin/style/vendor/daterangepicker.bkp.css  # Backup Calendar StyleSheet...
             cp -f admin/scripts/vendor/app.min.js admin/scripts/vendor/app.min.bkp.js # Backup app.js
             cp -f admin/scripts/pi-hole/js/index.js admin/scripts/pi-hole/js/index.bkp.js # Backup index.js
-            echo "Backup completed!"
+            echo "Backup completed! Backup files contain the .bkp suffix before their extension."
 			break ;;
         [Nn]* ) break;;
         * ) echo "Please answer Yes (y) or No (n).";;
@@ -18,9 +18,6 @@ while true; do
     case $yn in
         [Yy]* ) 
 	    git clone https://github.com/mbarrows20/pi-hole-material-dark.git temp
-            cd temp
-            git checkout feature_graphicColors
-            cd ..
             rm -f admin/style/vendor/skin-blue.min.css
             rm -f admin/style/vendor/daterangepicker.css
             rm -f admin/scripts/vendor/app.min.js
