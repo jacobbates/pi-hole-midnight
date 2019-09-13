@@ -835,14 +835,12 @@ $(document).ready(function () {
                         label: function (tooltipItems, data) {
                             return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel;
                         },
-                        labelTextColor: function (tooltipItem, data) {
+                        labelColor: function (tooltipItem, data) {
                             var color = data.tooltip._data.datasets[tooltipItem.datasetIndex].borderColor;
-                            console.log(color);
                             return {
                                 borderColor: "transparent",
                                 backgroundColor: color
                             };
-
                         }
                     }
                 },
