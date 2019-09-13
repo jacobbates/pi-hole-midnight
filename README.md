@@ -15,6 +15,12 @@ Created for use with [pi-hole](https://github.com/pi-hole/pi-hole).
 5. Type: `sudo ./install_Material_Dark_Theme.sh`
 6. Follow the onscreen instructions!
 
+If you get a 400 Bad Request after running step 3 above, it's likely that GitHub thinks your PiHole is a webcrawler. In such an event, run the following steps before continuing to step 4: 
+
+1. Type: `sudo git clone https://github.com/MBarrows20/pi-hole-material-dark.git`
+2. Type: `sudo cp pi-hole-material-dark/install_Material_Dark_Theme.sh install_Material_Dark_Theme.sh`
+3. Type: `sudo rm -rf pi-hole-material-dark`
+
 ----------
 ## Uninstall/Revert
 Type the following commands into SSH, line by line.
