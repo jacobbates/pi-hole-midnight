@@ -660,7 +660,7 @@ $(document).ready(function () {
             labels: [],
             datasets: [
                 {
-                    label: "Total DNS Queries",
+                    label: "Total",
                     fill: false,
                     backgroundColor: "transparent",
                     borderColor: "rgba(25, 138, 78, 1)",
@@ -672,7 +672,7 @@ $(document).ready(function () {
                     cubicInterpolationMode: "monotone"
                 },
                 {
-                    label: "Blocked DNS Queries",
+                    label: "Blocked",
                     fill: false,
                     backgroundColor: "transparent",
                     borderColor: "rgba(46,165,187,1)",
@@ -835,12 +835,14 @@ $(document).ready(function () {
                         label: function (tooltipItems, data) {
                             return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel;
                         },
-                        labelColor: function(tooltipItem, chart){
-                            var color = data.datasets[tolltipItems.datasetIndex].borderColor[tooltipItems.datasetIndex];
+                        labelTextColor: function (tooltipItem, data) {
+                            var color = data.tooltip._data.datasets[tooltipItem.datasetIndex].borderColor;
+                            console.log(color);
                             return {
-                                borderColor: 'rgb(0,0,0)',
+                                borderColor: "transparent",
                                 backgroundColor: color
-                            }
+                            };
+
                         }
                     }
                 },
