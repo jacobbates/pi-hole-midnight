@@ -841,6 +841,7 @@ $(document).ready(function () {
                                 borderColor: 'rgb(0,0,0)',
                                 backgroundColor: color
                             }
+
                         }
                     }
                 },
