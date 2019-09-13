@@ -834,6 +834,9 @@ $(document).ready(function () {
                         },
                         label: function (tooltipItems, data) {
                             return data.datasets[tooltipItems.datasetIndex].label + ": " + tooltipItems.yLabel;
+                        },
+                        labelColor: function(tooltipItem, chart){
+                            return data.datasets[tolltipItems.datasetIndex].borderColor[tooltipItems.datasetIndex];
                         }
                     }
                 },
