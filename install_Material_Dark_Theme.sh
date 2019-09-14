@@ -18,9 +18,6 @@ while true; do
     case $yn in
         [Yy]* ) 
 	    git clone https://github.com/mbarrows20/pi-hole-material-dark.git temp
-            cd temp
-            git checkout feature_graphicColors
-            cd ..
             rm -f admin/style/vendor/skin-blue.min.css
             rm -f admin/style/vendor/daterangepicker.css
             rm -f admin/scripts/vendor/app.min.js
