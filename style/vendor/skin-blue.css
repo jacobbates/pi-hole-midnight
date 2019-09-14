@@ -254,7 +254,7 @@ html {
 
 #ad-frequency td,#ad-frequency th,#all-queries,#all-queries th,#all-queries tr td,#all-queries tr td:nth-child(6),#client-frequency td,#client-frequency th,#client-frequency-blocked td,#client-frequency-blocked th,#domain-frequency td,#domain-frequency th,#network-entries_filter,#network-entries_length,.table-striped>tbody>tr>td,.table-striped>thead>tr>th {
 
-    color: #c7c7c7;
+    color: #c7c7c7 !important;
     border-color: #414141
 }
 
