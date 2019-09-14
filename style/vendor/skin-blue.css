@@ -27,7 +27,7 @@ html {
 }
 
 ::-webkit-resizer,::-webkit-scrollbar-button {
-    background-color: #666
+    background-color: #666;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -44,9 +44,21 @@ html {
     background-color: #000
 }
 
-.small-box.bg-aqua,.small-box.bg-green,.small-box.bg-red,.small-box.bg-yellow {
+.small-box.bg-aqua{
     background: #212121!important;
-    border-top: 3px solid #303030
+    border-top: 3px solid rgb(0,192,239,.8)
+}
+.small-box.bg-green{
+    background: #212121!important;
+    border-top: 3px solid rgb(0,166,90,.8)
+}
+.small-box.bg-red{
+    background: #212121!important;
+    border-top: 3px solid rgb(221,75,57,.8)
+}
+.small-box.bg-yellow{
+    background: #212121!important;
+    border-top: 3px solid rgb(243,156,18,.8)
 }
 
 .small-box.bg-red .icon {
@@ -82,16 +94,14 @@ html {
 
 .content-wrapper,.right-side {
     background: #000;
-    color: #f5f5f5;
+    color: #f5f5f5
 }
 
-.content-wrapper table>tbody>tr>td{
-    color: #414141;
+#DHCPLeasesTable_wrapper td,#DHCPStaticLeasesTable_wrapper td,#dns td,#sysadmin td, #sysadmin th {
+    color: #c7c7c7;
+    border-color: #414141
 }
-#sysadmin td, #dns td, #DHCPLeasesTable_wrapper td, #DHCPStaticLeasesTable_wrapper td{
-    color: #f5f5f5;
-    border-color:#414141
-}
+
 .input-group .input-group-addon,.list-group-item,.panel,.panel-default>.panel-heading {
     background: #303030;
     border-color: #666;
@@ -237,8 +247,10 @@ html {
     color: #f5f5f5
 }
 
-#ad-frequency td,#client-frequency td,#client-frequency-blocked td,#domain-frequency td,#network-entries_filter,#network-entries_length {
-    color: #f5f5f5
+#ad-frequency th, #ad-frequency td,#client-frequency th, #client-frequency td,#client-frequency-blocked th, #client-frequency-blocked td,#domain-frequency th,#domain-frequency td,#network-entries_filter,#network-entries_length, 
+.table-striped>thead>tr>th, .table-striped>tbody>tr>td, #all-queries, #all-queries th,#all-queries tr td, #all-queries tr td:nth-child(6){
+    color: #c7c7c7;
+    border-color: #414141
 }
 
 #ad-frequency a,#client-frequency a,#client-frequency-blocked a,#domain-frequency a {
@@ -252,31 +264,25 @@ html {
 .skin-blue .left-side,.skin-blue .main-sidebar,.skin-blue .wrapper {
     background-color: #303030
 }
-.table-bordered>tfoot>tr>td,.table-bordered>thead>tr>td,.table-responsive {
-    border-color: #303030;
-    color: #212121
+
+.table-bordered>tfoot>tr>td,.table-bordered>thead>tr>td, .table-bordered>tbody>tr>th, .table-responsive, .table-responsive tbody>tr>td {
+    border-color: #414141;
 }
-#network-entries>tbody>tr>td{
+
+#network-entries tbody>tr>td{
     color: #414141;
-    border-color: #303030;
+    border-color: #303030
 }
+
 .table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>th {
     color: #e0e0e0
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #101417
+    background-color: #101417;
 }
 
 .layout-boxed {
     background-color: #0a0d0f!important;
     background-image: none!important
-}
-
-#all-queries tr td {
-    color: #f5f5f5
-}
-
-#all-queries tr td:nth-child(6) {
-    color: #f5f5f5!important
 }
