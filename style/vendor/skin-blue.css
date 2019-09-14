@@ -27,7 +27,7 @@ html {
 }
 
 ::-webkit-resizer,::-webkit-scrollbar-button {
-    background-color: #666;
+    background-color: #666
 }
 
 ::-webkit-scrollbar-thumb {
@@ -60,7 +60,6 @@ html {
 }
 
 .small-box.bg-yellow {
-
     background: #212121!important;
     border-top: 3px solid rgb(243,156,18,.8)
 }
@@ -102,7 +101,6 @@ html {
 }
 
 #DHCPLeasesTable_wrapper td,#DHCPStaticLeasesTable_wrapper td,#dns td,#sysadmin td,#sysadmin th {
-
     color: #c7c7c7;
     border-color: #414141
 }
@@ -253,8 +251,8 @@ html {
 }
 
 #ad-frequency td,#ad-frequency th,#all-queries,#all-queries th,#all-queries tr td,#all-queries tr td:nth-child(6),#client-frequency td,#client-frequency th,#client-frequency-blocked td,#client-frequency-blocked th,#domain-frequency td,#domain-frequency th,#network-entries_filter,#network-entries_length,.table-striped>tbody>tr>td,.table-striped>thead>tr>th {
+    color: #c7c7c7!important;
 
-    color: #c7c7c7 !important;
     border-color: #414141
 }
 
@@ -270,14 +268,13 @@ html {
     background-color: #303030
 }
 
-
 .table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td,.table-bordered>thead>tr>td,.table-responsive,.table-responsive tbody>tr>td {
     border-color: #414141
 }
 
-#network-entries tbody>tr>td, #network-details td{
+#network-details td,#network-entries tbody>tr>td {
+    color: #414141 !important;
 
-    color: #414141;
     border-color: #303030
 }
 
@@ -286,7 +283,7 @@ html {
 }
 
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #101417;
+    background-color: #101417
 }
 
 .layout-boxed {
