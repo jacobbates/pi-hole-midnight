@@ -227,7 +227,7 @@ $.AdminLTE.options = {
         energyGreen: "#01ffc3",
         darkBlue: "#23568f",
         lavender: "#9d72ff",
-        lightPink: "ed71a7",
+        lightPink: "#ed71a7",
         robinsEgg: "#648faf",
         slate: "#0a3949",
 
