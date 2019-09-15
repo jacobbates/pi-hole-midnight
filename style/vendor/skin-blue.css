@@ -252,7 +252,6 @@ html {
 
 #ad-frequency td,#ad-frequency th,#all-queries,#all-queries th,#all-queries tr td,#all-queries tr td:nth-child(6),#client-frequency td,#client-frequency th,#client-frequency-blocked td,#client-frequency-blocked th,#domain-frequency td,#domain-frequency th,#network-entries_filter,#network-entries_length,.table-striped>tbody>tr>td,.table-striped>thead>tr>th {
     color: #c7c7c7!important;
-
     border-color: #414141
 }
 
@@ -269,14 +268,23 @@ html {
 }
 
 .table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td,.table-bordered>thead>tr>td,.table-responsive,.table-responsive tbody>tr>td {
-    border-color: #414141
+    border-color: #414141;
 }
 
-#network-details td,#network-entries tbody>tr>td {
-    color: #414141 !important;
-
-    border-color: #303030
+#network-entries tbody{
+    border-color: #303030;
+    filter: invert(85%);
 }
+#network-details td{
+    filter: invert(85%);
+    color: #666;
+}
+#network-details thead, #network-details tfoot>tr>th{
+    background-color: #303030;
+    border-color: #414141;
+    color: #f5f5f5
+}
+
 
 .table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>th {
     color: #e0e0e0
