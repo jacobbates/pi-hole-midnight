@@ -21,6 +21,14 @@ If you get a 400 Bad Request after running step 3 above, it's likely that GitHub
 2. Type: `sudo cp pi-hole-material-dark/install_Material_Dark_Theme.sh install_Material_Dark_Theme.sh`
 3. Type: `sudo rm -rf pi-hole-material-dark`
 
+---------
+## Update
+
+1. open a terminal (or SSH if you're remoting in) ( <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> )
+2. Type: `cd /var/www/html/`
+3. Type: `sudo ./install_Material_Dark_Theme.sh`
+4. Follow the onscreen instructions!
+
 ----------
 ## Uninstall/Revert
 Type the following commands into SSH, line by line.
