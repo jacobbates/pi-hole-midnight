@@ -721,6 +721,7 @@ $(document).ready(function () {
             scales: {
                 xAxes: [{
                     type: "time",
+                    gridLines:{display: true, color: "#414141"},
                     time: {
                         unit: "hour",
                         displayFormats: {
@@ -730,6 +731,7 @@ $(document).ready(function () {
                     }
                 }],
                 yAxes: [{
+                    gridLines:{display: true, color: "#414141"},
                     ticks: {
                         beginAtZero: true
                     }
@@ -849,6 +851,7 @@ $(document).ready(function () {
                 },
                 scales: {
                     xAxes: [{
+                        gridLines:{display: true, color: "#414141"},
                         type: "time",
                         time: {
                             unit: "hour",
@@ -859,6 +862,7 @@ $(document).ready(function () {
                         }
                     }],
                     yAxes: [{
+                        gridLines:{display: true, color: "#414141"},
                         ticks: {
                             beginAtZero: true
                         },
