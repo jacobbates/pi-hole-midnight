@@ -188,16 +188,22 @@ function updateQueryTypesPie() {
         else {
             iter = data;
         }
+        var dd = []; 
         $.each(iter, function (key, value) {
-            v.push(value);
-            c.push(colors.shift());
-            k.push(key);
+            v = [value];
+            c = colors.shift();
+            k = key ;
+        dd.push({data: v, backgroundColor: c, label: k});
         });
+        dd.sort((a,b) => (a.data[0] < b.data[0]) ? 1 : -1);
+        //dd.sort((a,b) => (a[1] < b[1]) ? 1 : -1)
         // Build a single dataset with the data to be pushed
-        var dd = { data: v, backgroundColor: c };
         // and push it at once
-        queryTypePieChart.data.datasets[0] = dd;
-        queryTypePieChart.data.labels = k;
+        queryTypePieChart.data.labels = ["Type"];
+        queryTypePieChart.data.datasets = [];
+        $.each(dd, function(key,value){
+            queryTypePieChart.data.datasets.push(dd[key]);
+        });
         $("#query-types-pie .overlay").hide();
         queryTypePieChart.update();
         queryTypePieChart.chart.config.options.cutoutPercentage = 50;
@@ -352,19 +358,22 @@ function updateForwardDestinationsPie() {
             }
             values.push([key, value, colors.shift()]);
         });
-
+	    var dd = []; 
+	    values.sort((a,b) => (a[1] < b[1]) ? 1 : -1)
         // Split data into individual arrays for the graphs
-        $.each(values, function (key, value) {
-            k.push(value[0]);
-            v.push(value[1]);
-            c.push(value[2]);
+	$.each(values, function (key, value) {
+            k = value[0];
+            v = [value[1]];
+            c = value[2];
+	    dd.push({data: v, backgroundColor: c, label: k});
         });
-
         // Build a single dataset with the data to be pushed
-        var dd = { data: v, backgroundColor: c };
         // and push it at once
-        forwardDestinationPieChart.data.labels = k;
-        forwardDestinationPieChart.data.datasets[0] = dd;
+        forwardDestinationPieChart.data.labels = ["Destination"];
+	forwardDestinationPieChart.data.datasets = [];
+	$.each(dd, function(key,value){
+	    forwardDestinationPieChart.data.datasets.push(dd[key]);
+	});
         // and push it at once
         $("#forward-destinations-pie .overlay").hide();
         forwardDestinationPieChart.update();
@@ -720,6 +729,7 @@ $(document).ready(function () {
             },
             scales: {
                 xAxes: [{
+			gridLines:{display:true,color:"#414141"},
                     type: "time",
                     time: {
                         unit: "hour",
@@ -730,6 +740,7 @@ $(document).ready(function () {
                     }
                 }],
                 yAxes: [{
+		    gridLines:{display:true,color:"#414141"},
                     ticks: {
                         beginAtZero: true
                     }
@@ -849,7 +860,8 @@ $(document).ready(function () {
                 },
                 scales: {
                     xAxes: [{
-                        type: "time",
+                        gridLines:{display:true,color:"#414141"},
+			type: "time",
                         time: {
                             unit: "hour",
                             displayFormats: {
@@ -859,6 +871,7 @@ $(document).ready(function () {
                         }
                     }],
                     yAxes: [{
+			gridLines:{display:true,color:"#414141"},
                         ticks: {
                             beginAtZero: true
                         },
@@ -983,7 +996,7 @@ $(document).ready(function () {
     if (document.getElementById("queryTypePieChart")) {
         ctx = document.getElementById("queryTypePieChart").getContext("2d");
         queryTypePieChart = new Chart(ctx, {
-            type: "doughnut",
+            type: "bar",
             data: {
                 labels: [],
                 datasets: [{ data: [] }]
@@ -1001,7 +1014,7 @@ $(document).ready(function () {
                         },
                         label: function (tooltipItems, data) {
                             var dataset = data.datasets[tooltipItems.datasetIndex];
-                            var label = data.labels[tooltipItems.index];
+                            var label = dataset.label;
                             return label + ": " + dataset.data[tooltipItems.index].toFixed(1) + "%";
                         }
                     }
@@ -1009,7 +1022,14 @@ $(document).ready(function () {
                 animation: {
                     duration: 750
                 },
-                cutoutPercentage: 0
+                cutoutPercentage: 0,
+                scales:{
+                    xAxes:[{stacked:true}],
+                    yAxes:[{stacked:true,
+                        gridLines:{display:true,color:"#414141"},
+                        ticks:{min: 0, max: 100, stepSize: 25}
+                    }]
+                }
             }
         });
 
@@ -1020,14 +1040,14 @@ $(document).ready(function () {
     if (document.getElementById("forwardDestinationPieChart")) {
         ctx = document.getElementById("forwardDestinationPieChart").getContext("2d");
         forwardDestinationPieChart = new Chart(ctx, {
-            type: "doughnut",
+            type: "bar",
             data: {
                 labels: [],
                 datasets: [{ data: [] }]
             },
             options: {
                 legend: {
-                    display: false
+			        display:false
                 },
                 tooltips: {
                     enabled: false,
@@ -1038,7 +1058,7 @@ $(document).ready(function () {
                         },
                         label: function (tooltipItems, data) {
                             var dataset = data.datasets[tooltipItems.datasetIndex];
-                            var label = data.labels[tooltipItems.index];
+                            var label = dataset.label;
                             return label + ": " + dataset.data[tooltipItems.index].toFixed(1) + "%";
                         }
                     }
@@ -1046,7 +1066,14 @@ $(document).ready(function () {
                 animation: {
                     duration: 750
                 },
-                cutoutPercentage: 0
+                cutoutPercentage: 0,
+                scales:{
+                    xAxes:[{stacked:true}],
+                    yAxes:[{stacked:true,
+                        gridLines:{display:true,color:"#414141"},
+                        ticks:{min: 0, max: 100, stepSize: 25}
+                    }]
+                }
             }
         });
 
